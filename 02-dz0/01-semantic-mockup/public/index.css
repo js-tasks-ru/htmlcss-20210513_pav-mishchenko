@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 1%;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-bottom: 1%;
+}
+
+header h1 {
+  background-color: #f03d3e;
+  text-align: center;
+}
+
+header nav {
+  background-color: #ebb734;
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+main {
+  background-color: #4fcd0c;
+  padding: 1%;
+  flex-grow: 1;
+}
+
+main article {
+  background-color: #0c2ccd;
+  margin: 0 0 1%;
+}
+
+footer {
+  background-color: #9845e7;
+  text-align: center;
+  font-size: 2em;
+}

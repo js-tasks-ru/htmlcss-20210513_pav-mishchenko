@@ -1,0 +1,13 @@
+.buttons {
+  padding: 1em;
+}
+
+.buttons-row {
+  display: flex;
+}
+
+.buttons-row__title {
+  width: 5%;
+  color: var(--grey-3);
+  text-transform: uppercase;
+}

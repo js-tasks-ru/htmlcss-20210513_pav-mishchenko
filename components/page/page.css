@@ -1,0 +1,24 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page__header {
+  padding: 96px 160px;
+}
+
+.page__main {
+  flex-grow: 1;
+  background-color: var(--grey-5);
+  border-top: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--grey-2);
+}
+.page__footer {
+  padding: 70px 417px 70px 383px;
+  text-align: center;
+}
+
+.page__footer-title {
+  margin-bottom: 32px;
+}

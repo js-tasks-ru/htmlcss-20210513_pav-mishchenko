@@ -1,0 +1,67 @@
+.histogram {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  padding: 16px 24px 24px;
+}
+
+.histogram__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.histogram__link {
+  color: var(--blue);
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+.histogram__chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-left: -1px;
+  height: 50px;
+  padding-top: 50px;
+  box-sizing: content-box;
+}
+
+.histogram__chart-column {
+  background-color: var(--blue);
+  flex-grow: 1;
+  margin-left: 1px;
+}
+
+.histogram__chart-column[data-height='10'] {
+  height: 10%;
+}
+.histogram__chart-column[data-height='20'] {
+  height: 20%;
+}
+.histogram__chart-column[data-height='30'] {
+  height: 30%;
+}
+.histogram__chart-column[data-height='40'] {
+  height: 40%;
+}
+.histogram__chart-column[data-height='50'] {
+  height: 50%;
+}
+.histogram__chart-column[data-height='60'] {
+  height: 60%;
+}
+.histogram__chart-column[data-height='70'] {
+  height: 70%;
+}
+.histogram__chart-column[data-height='80'] {
+  height: 80%;
+}
+.histogram__chart-column[data-height='90'] {
+  height: 90%;
+}
+.histogram__chart-column[data-height='100'] {
+  height: 100%;
+}

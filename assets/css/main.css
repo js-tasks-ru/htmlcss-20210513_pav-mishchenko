@@ -8,6 +8,9 @@
 @import './_fonts.css';
 @import './_grid.css';
 
+/* pages */
+@import '../../components/page-template/page-template.css';
+
 /* components */
 @import '../../components/page/page.css';
 @import '../../components/cards/cards.css';

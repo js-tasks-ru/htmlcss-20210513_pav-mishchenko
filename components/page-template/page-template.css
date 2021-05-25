@@ -1,0 +1,35 @@
+.page-template {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--grey-1);
+  grid-row-gap: 36px;
+}
+
+.page-template__header {
+  height: 82px;
+  background-color: var(--white);
+}
+
+.page-template__main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 56px;
+  justify-content: center;
+}
+
+.menu {
+  width: 229px;
+  margin-left: 165px;
+}
+
+.component {
+  width: 80%;
+  background-color: var(--white);
+}
+
+.page-template__footer {
+  padding: 56px 0;
+  text-align: center;
+  color: var(--grey-3);
+}

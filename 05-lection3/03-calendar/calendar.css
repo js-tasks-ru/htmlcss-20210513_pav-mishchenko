@@ -1,11 +1,12 @@
 .calendar {
   border: 1px solid var(--grey-3);
   border-radius: 8px;
+  padding: 28px;
 }
 
 .calendar__title {
   text-align: center;
-  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 .calendar__wrapper {
@@ -19,10 +20,8 @@
   top: 0;
   right: 0;
   bottom: 0;
-  padding: 28px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  align-items: stretch;
   text-align: center;
 }
 
@@ -38,6 +37,7 @@
 
 .calendar__cell_number {
   color: var(--grey-7);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .calendar__cell_active {

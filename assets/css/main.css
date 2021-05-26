@@ -10,3 +10,5 @@
 
 /* components */
 @import '../../components/page/page.css';
+@import '../../components/cards/cards.css';
+@import '../../components/card/card.css';

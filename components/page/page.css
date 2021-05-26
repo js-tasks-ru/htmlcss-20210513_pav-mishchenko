@@ -5,7 +5,7 @@
 }
 
 .page__header {
-  padding: 96px 160px;
+  padding: 96px 0;
 }
 
 .page__main {
@@ -21,4 +21,8 @@
 
 .page__footer-title {
   margin-bottom: 32px;
+}
+
+.page__content {
+  margin: 0 auto;
 }

@@ -16,16 +16,9 @@
   grid-template-columns: auto 1fr;
   grid-column-gap: 56px;
   justify-content: center;
-}
-
-.menu {
-  width: 229px;
-  margin-left: 165px;
-}
-
-.component {
-  width: 80%;
-  background-color: var(--white);
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
 }
 
 .page-template__footer {

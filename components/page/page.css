@@ -24,6 +24,5 @@
 }
 
 .page__content {
-  margin-left: 160px;
-  margin-right: 160px;
+  margin: 0 auto;
 }

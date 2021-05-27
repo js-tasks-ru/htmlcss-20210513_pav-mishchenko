@@ -6,12 +6,16 @@
   --dark-purple: #5028c6;
   --blue: #374fc7;
   --dark-blue: #2342c0;
+  --blue-light: #4263eb;
+  --blue-x-light: #a0b1f5;
   --red: #f03d3e;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
   --grey-4: #495057;
   --grey-5: #f9fafc;
+  --grey-6: #90a0b7;
+  --grey-7: #334d6e;
 
   --error: var(--red);
   --success: var(--blue);
@@ -21,4 +25,6 @@
   --secondary: var(--purple);
   --secondary-dark: var(--dark-purple);
   --alternate: var(--white);
+  --active: var(--blue-light);
+  --active-secondary: var(--blue-x-light);
 }

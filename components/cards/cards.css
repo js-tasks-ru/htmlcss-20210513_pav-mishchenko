@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 68px;
-
 }
 
 .cards__item {
@@ -14,5 +13,9 @@
     margin-top: 24px;
     padding-left: 8px;
     padding-right: 8px;
+  }
+
+  .cards__item {
+    margin: 0 8px 11px;
   }
 }

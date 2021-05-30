@@ -2,6 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 68px;
+
+}
+
+.cards__item {
+  margin: 0 30px 30px;
 }
 
 @media screen and (max-width: 768px) {

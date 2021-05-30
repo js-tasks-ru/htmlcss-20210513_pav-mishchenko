@@ -6,10 +6,6 @@
   grid-row-gap: 36px;
 }
 
-.page-template__header {
-  height: 82px;
-  padding: 25px 165px;
-}
 
 .page-template__main {
   display: grid;
@@ -26,4 +22,20 @@
   padding: 56px 0;
   text-align: center;
   color: var(--grey-3);
+}
+
+@media screen and (max-width: 768px) {
+  .page-template {
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 0;
+  }
+
+
+  .page-template__main {
+    grid-template-columns: 1fr;
+  }
+
+  .page-template__footer {
+    display: none;
+  }
 }

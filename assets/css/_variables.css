@@ -9,6 +9,7 @@
   --blue-light: #4263eb;
   --blue-x-light: #a0b1f5;
   --red: #f03d3e;
+  --dark-red: #d84910;
   --grey-1: #f8f9fa;
   --grey-2: #dde2e5;
   --grey-3: #acb5bd;
@@ -18,6 +19,7 @@
   --grey-7: #334d6e;
 
   --error: var(--red);
+  --notification: var(--dark-red);
   --success: var(--blue);
 
   --primary: var(--blue);

@@ -28,9 +28,12 @@
 }
 
 .accordion__summary::after {
-  content: url('./../../../assets/images/vector.svg');
+  content: '';
+  background: url(./../../../assets/images/sprite.svg) no-repeat 0 -668px;
   position: absolute;
   right: 32px;
+  width: 26px;
+  height: 26px;
 }
 
 .accordion__details[open] .accordion__summary::after {

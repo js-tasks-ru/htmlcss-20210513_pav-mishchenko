@@ -6,14 +6,6 @@
   grid-row-gap: 36px;
 }
 
-.page-template__header {
-  height: 82px;
-  padding: 25px 165px;
-}
-
-.page-template__menu-toggle {
-  display: none;
-}
 
 .page-template__main {
   display: grid;
@@ -38,28 +30,6 @@
     grid-row-gap: 0;
   }
 
-  .page-template__header {
-    height: 64px;
-  }
-
-  .page-template__menu-toggle {
-    background-image: url('../../assets/images/menu.svg');
-    width: 24px;
-    height: 24px;
-    display: block;
-    margin-top: 20px;
-    margin-left: 16px;
-    cursor: pointer;
-  }
-
-  .page-template__menu-toggle_open {
-    background-image: url('../../assets/images/x.svg');
-    background-color: var(--grey-2);
-    background-position: center;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-  }
 
   .page-template__main {
     grid-template-columns: 1fr;

@@ -5,12 +5,20 @@
 }
 
 .page__header {
+  display: flex;
+  flex-wrap: wrap;
   padding: 25px 165px;
+  align-items: center;
+}
+
+.page__menu-toggle {
+  display: none;
 }
 
 .page__title {
   margin-top: 40px;
   margin-bottom: 40px;
+  flex-basis: 100%;
 }
 
 .page__main {
@@ -35,5 +43,35 @@
 @media screen and (max-width: 768px) {
   .page__footer {
     display: none;
+  }
+
+  .page__menu-toggle {
+    background-image: url('../../assets/images/menu.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .page__menu-toggle_open {
+    background-image: url('../../assets/images/x.svg');
+    background-color: var(--grey-2);
+    background-position: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .page__logo {
+    margin: auto;
+  }
+
+  .page__header {
+    padding: 16px;
+  }
+
+  .page__title {
+    margin: 16px 0;
   }
 }

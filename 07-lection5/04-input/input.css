@@ -1,0 +1,57 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input__field,
+.input__label {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.input__label {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--grey-3);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.input__field {
+  outline: none !important;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  width: 350px;
+  height: 56px;
+  padding: 17px 40px 17px 24px;
+  color: var(--grey-4);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.input__field::placeholder {
+  color: var(--grey-2);
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.input__field:focus {
+  border: 1px solid var(--blue-light);
+}
+
+.input__field_success {
+  background: url(./../../assets/images/sprite.svg#SuccessBlue) no-repeat scroll
+    calc(100% - 10px) 50%;
+}
+
+.input__field_invalid,
+.input__field_invalid:focus {
+  border: 1px solid var(--error);
+  background: url(./../../assets/images/sprite.svg#ErrorRed) no-repeat scroll
+    calc(100% - 10px) 50%;
+}

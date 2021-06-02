@@ -1,6 +1,6 @@
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -10,12 +10,14 @@
 }
 
 .modal__content {
-  background: white;
+  position: fixed;
   width: 428px;
-  margin: 50% auto;
-  transform: translateY(-100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 30px 40px;
   border-radius: 8px;
+  background: white;
 }
 
 .modal__title {

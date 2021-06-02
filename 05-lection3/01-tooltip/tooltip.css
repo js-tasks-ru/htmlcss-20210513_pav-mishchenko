@@ -1,6 +1,6 @@
 .tooltip {
   position: relative;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -15,10 +15,11 @@
   height: 45px;
   width: 129px;
   position: absolute;
-  top: 15px;
-  background: var(--blue-light);
-  transform: translate(calc(-50% + 26px / 2), -150%);
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%, -100%);
   border-radius: 10px;
+  background: var(--blue-light);
   color: var(--grey-2);
   font-size: 16px;
   line-height: 24px;
@@ -30,7 +31,8 @@
   border-top: 6px solid var(--blue-light);
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 150%);
+  bottom: 0;
+  transform: translate(-50%, 100%);
 }
 
 .tooltip__icon:hover ~ .tooltip__msg {

@@ -17,6 +17,7 @@
   --grey-5: #f9fafc;
   --grey-6: #90a0b7;
   --grey-7: #334d6e;
+  --grey-half-transparent: rgba(196, 196, 196, 0.5);
 
   --error: var(--red);
   --notification: var(--dark-red);

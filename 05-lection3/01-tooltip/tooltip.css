@@ -6,6 +6,7 @@
 }
 
 .tooltip__icon {
+  position: relative;
   cursor: pointer;
 }
 
@@ -15,9 +16,8 @@
   width: 129px;
   position: absolute;
   top: 15px;
-  left: 12px;
   background: var(--blue-light);
-  transform: translate(-50%, -150%);
+  transform: translate(calc(-50% + 26px / 2), -150%);
   border-radius: 10px;
   color: var(--grey-2);
   font-size: 16px;

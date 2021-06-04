@@ -59,6 +59,7 @@
 
   .card__content {
     border-bottom: 1px solid var(--grey-2);
+    padding-bottom: 8px;
   }
 
   .card__title {

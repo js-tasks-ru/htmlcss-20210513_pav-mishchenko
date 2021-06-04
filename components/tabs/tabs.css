@@ -14,6 +14,7 @@
 .tabs__scroller {
   display: flex;
   width: 100%;
+  margin-left: -20px;
 }
 
 .tabs__divider {
@@ -33,6 +34,11 @@
   margin-left: 40px;
   padding-bottom: 13px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 5px solid transparent;
 }
 
 .tabs__input[id='#all-tab']:checked

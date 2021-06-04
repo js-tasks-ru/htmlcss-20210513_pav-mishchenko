@@ -1,0 +1,69 @@
+.toggle__input {
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  outline: none;
+}
+
+.toggle__state {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-4);
+  margin-left: 12px;
+}
+
+.toggle__control {
+  width: 52px;
+  height: 28px;
+  background: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 16px;
+  position: relative;
+}
+
+.toggle__icon {
+  width: 24px;
+  height: 24px;
+  background: var(--grey-2);
+  border-radius: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translate(2px, -50%);
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+  background: var(--blue-light);
+  border-color: var(--blue-light);
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__icon {
+  background: var(--white);
+  right: 0;
+  transform: translate(-2px, -50%);
+}
+
+.toggle__input:disabled ~ .toggle__state {
+  cursor: auto;
+  pointer-events: none;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control {
+  background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title {
+  color: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__icon {
+  background: var(--grey-3);
+}

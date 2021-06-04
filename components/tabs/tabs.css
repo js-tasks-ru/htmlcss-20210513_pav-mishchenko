@@ -1,0 +1,47 @@
+.tabs__input {
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  outline: none;
+}
+
+.tabs__content {
+  display: none;
+}
+
+.tabs__scroller {
+  display: flex;
+  width: 100%;
+  padding-left: 125px;
+}
+
+.tabs__label {
+  color: var(--grey-3);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 40px;
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.tabs__input[id='#all-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#all-tab'],
+.tabs__input[id='#complex-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#complex-tab'],
+.tabs__input[id='#simple-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#simple-tab'] {
+  color: var(--black);
+  border-bottom: 5px solid var(--black);
+}
+
+.tabs__input[id='#all-tab']:checked ~ .tabs__content_all,
+.tabs__input[id='#complex-tab']:checked ~ .tabs__content_complex,
+.tabs__input[id='#simple-tab']:checked ~ .tabs__content_simple {
+  display: block;
+}

@@ -14,7 +14,15 @@
 .tabs__scroller {
   display: flex;
   width: 100%;
-  padding-left: 125px;
+}
+
+.tabs__divider {
+  border: none;
+  color: var(--grey-2);
+  background-color: var(--grey-2);
+  height: 1px;
+  width: 300%;
+  transform: translate(-50%, 0);
 }
 
 .tabs__label {
@@ -35,13 +43,21 @@
   .tabs__label[for='#complex-tab'],
 .tabs__input[id='#simple-tab']:checked
   ~ .tabs__scroller
-  .tabs__label[for='#simple-tab'] {
+  .tabs__label[for='#simple-tab'],
+.tabs__input[id='#html-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#html-tab'],
+.tabs__input[id='#css-tab']:checked
+  ~ .tabs__scroller
+  .tabs__label[for='#css-tab'] {
   color: var(--black);
   border-bottom: 5px solid var(--black);
 }
 
 .tabs__input[id='#all-tab']:checked ~ .tabs__content_all,
 .tabs__input[id='#complex-tab']:checked ~ .tabs__content_complex,
-.tabs__input[id='#simple-tab']:checked ~ .tabs__content_simple {
+.tabs__input[id='#simple-tab']:checked ~ .tabs__content_simple,
+.tabs__input[id='#html-tab']:checked ~ .tabs__html,
+.tabs__input[id='#css-tab']:checked ~ .tabs__css {
   display: block;
 }

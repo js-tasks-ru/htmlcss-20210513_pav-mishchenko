@@ -26,7 +26,9 @@
         <div class="menu">
           <div class="menu__section">
             <h4 class="menu__section-title">Elements</h4>
-            <a class="menu__section-item" href="#">Avatar</a>
+            <a class="menu__section-item menu__section-item_active" href="#"
+              >Avatar</a
+            >
             <a class="menu__section-item" href="#">Custom form elements</a>
             <a class="menu__section-item" href="#">Button</a>
           </div>
@@ -39,8 +41,16 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Component title</div>
-          <div class="component__render"></div>
+          <div class="component__title">Avatar</div>
+          <div class="component__render">
+            <div class="avatar avatar_large">
+              <img
+                class="avatar__image"
+                src="./../assets/images/avatar.png"
+                alt="User Avatar"
+              />
+            </div>
+          </div>
           <div class="component__code">
             <div class="tabs">
               <input
@@ -63,10 +73,41 @@
               </div>
 
               <div class="tabs__content tabs__html">
-                <xmp></xmp>
+                <xmp>
+                  <div class="avatar">
+                    <img
+                      class="avatar__image"
+                      src="../../assets/images/avatar.png"
+                      alt="User Avatar"
+                    />
+                  </div>
+                </xmp>
               </div>
               <div class="tabs__content tabs__css">
-                <xmp></xmp>
+                <xmp
+>
+                  .avatar {
+                    width: 102px;
+                    height: 102px;
+                  }
+
+                  .avatar_small {
+                    width: 64px;
+                    height: 64px;
+                  }
+
+                  .avatar_large {
+                    width: 200px;
+                    height: 200px;
+                  }
+
+                  .avatar__image {
+                    object-fit: cover;
+                    border-radius: 50%;
+                    width: 100%;
+                    aspect-ratio: 1;
+                  }
+                </xmp>
               </div>
             </div>
           </div>

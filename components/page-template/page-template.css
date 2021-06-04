@@ -6,7 +6,6 @@
   grid-row-gap: 36px;
 }
 
-
 .page-template__main {
   display: grid;
   grid-template-columns: auto 1fr;

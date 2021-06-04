@@ -4,6 +4,10 @@
   height: 100%;
 }
 
+.page__tabs {
+  padding-left: 125px;
+}
+
 .page__main {
   flex-grow: 1;
   background-color: var(--grey-5);

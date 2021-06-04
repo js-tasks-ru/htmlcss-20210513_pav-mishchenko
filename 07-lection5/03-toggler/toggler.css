@@ -67,3 +67,27 @@
 .toggle__input:disabled ~ .toggle__state .toggle__icon {
   background: var(--grey-3);
 }
+
+/* Labels changing just for fun */
+.toggle__title_on,
+.toggle__title_disabled {
+  display: none;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__title_on {
+  display: block;
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__title_off,
+.toggle__input:checked ~ .toggle__state .toggle__title_disabled {
+  display: none;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title_disabled {
+  display: block;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title_off,
+.toggle__input:disabled ~ .toggle__state .toggle__title_on {
+  display: none;
+}

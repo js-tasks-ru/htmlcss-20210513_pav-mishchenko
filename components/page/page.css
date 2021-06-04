@@ -32,4 +32,8 @@
   .page__footer {
     display: none;
   }
+
+  .page__tabs {
+    padding-left: 0;
+  }
 }

@@ -1,12 +1,12 @@
 /* reset */
-@import './_reset.css';
+@import 'reset.css';
 
 /* globals */
 @import '../fonts/fonts.css';
-@import './_typography.css';
-@import './_variables.css';
-@import './_fonts.css';
-@import './_grid.css';
+@import 'typography.css';
+@import 'variables.css';
+@import 'fonts.css';
+@import 'grid.css';
 
 /* pages */
 @import '../../components/page-template/page-template.css';

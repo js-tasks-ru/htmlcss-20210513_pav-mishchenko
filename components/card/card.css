@@ -28,6 +28,9 @@
 }
 
 .card__title {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
   font-weight: 500;
   font-size: 21px;
   line-height: 25px;

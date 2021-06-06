@@ -25,27 +25,42 @@
         <div class="header__title">
           <h1>Reusable component library</h1>
         </div>
+
+        <div class="tabs">
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#all-tab"
+            data-id="all"
+            checked
+          />
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#complex-tab"
+            data-id="complex"
+          />
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#simple-tab"
+            data-id="simple"
+          />
+
+          <div class="tabs__scroller">
+            <label class="tabs__label" for="#all-tab">All components</label>
+            <label class="tabs__label" for="#complex-tab">Complex</label>
+            <label class="tabs__label" for="#simple-tab">Simple</label>
+          </div>
+        </div>
       </header>
-      <div class="tabs">
-        <input
-          type="radio"
-          name="tab"
-          class="tabs__input"
-          id="#all-tab"
-          checked
-        />
-        <input type="radio" name="tab" class="tabs__input" id="#complex-tab" />
-        <input type="radio" name="tab" class="tabs__input" id="#simple-tab" />
-
-        <div class="tabs__scroller page__tabs">
-          <label class="tabs__label" for="#all-tab">All components</label>
-          <label class="tabs__label" for="#complex-tab">Complex</label>
-          <label class="tabs__label" for="#simple-tab">Simple</label>
-        </div>
-
-        <div class="tabs__content tabs__content_all">
-          <main class="page__main">
-            <div class="page__content">
+      <main class="page__main">
+        <div class="page__content">
+          <div class="page__box">
+            <div class="tabs__content tabs__content_open" data-id="all">
               <div class="cards">
                 <div class="cards__item card">
                   <div class="card__content">
@@ -57,7 +72,10 @@
                     </div>
                   </div>
                   <div class="card__footer">
-                    <a href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html" class="card__title" title="Tooltip"
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html"
+                      class="card__title"
+                      title="Tooltip"
                       >Tooltip</a
                     >
                     <div class="card__sub-title" title="Tooltip">Tooltip</div>
@@ -413,7 +431,10 @@
                     </div>
                   </div>
                   <div class="card__footer">
-                    <a href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html" class="card__title" title="Avatar"
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html"
+                      class="card__title"
+                      title="Avatar"
                       >Avatar</a
                     >
                     <div class="card__sub-title" title="Avatar">Avatar</div>
@@ -421,11 +442,7 @@
                 </div>
               </div>
             </div>
-          </main>
-        </div>
-        <div class="tabs__content tabs__content_complex">
-          <main class="page__main">
-            <div class="page__content">
+            <div class="tabs__content" data-id="complex">
               <div class="cards">
                 <div class="cards__item card">
                   <div class="card__content">
@@ -754,11 +771,7 @@
                 </div>
               </div>
             </div>
-          </main>
-        </div>
-        <div class="tabs__content tabs__content_simple">
-          <main class="page__main">
-            <div class="page__content">
+            <div class="tabs__content" data-id="simple">
               <div class="cards">
                 <div class="cards__item card">
                   <div class="card__content">
@@ -770,7 +783,10 @@
                     </div>
                   </div>
                   <div class="card__footer">
-                    <a href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html" class="card__title" title="Tooltip"
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html"
+                      class="card__title"
+                      title="Tooltip"
                       >Tooltip</a
                     >
                     <div class="card__sub-title" title="Tooltip">Tooltip</div>
@@ -801,7 +817,10 @@
                     </div>
                   </div>
                   <div class="card__footer">
-                    <a href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html" class="card__title" title="Avatar"
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html"
+                      class="card__title"
+                      title="Avatar"
                       >Avatar</a
                     >
                     <div class="card__sub-title" title="Avatar">Avatar</div>
@@ -809,20 +828,21 @@
                 </div>
               </div>
             </div>
-          </main>
+          </div>
         </div>
-      </div>
-
-      <footer class="page__footer">
-        <h2 class="page__footer-title">About</h2>
-        <p>
-          This project is a collection of professionally designed, pre-built,
-          fully responsive HTML snippets you can drop into your projects. Get
-          started by checking out our free preview components, or browsing the
-          PNG previews in the categories you're most curious about.
-        </p>
-      </footer>
+      </main>
     </div>
+
+    <footer class="page__footer">
+      <h2 class="page__footer-title">About</h2>
+      <p>
+        This project is a collection of professionally designed, pre-built,
+        fully responsive HTML snippets you can drop into your projects. Get
+        started by checking out our free preview components, or browsing the PNG
+        previews in the categories you're most curious about.
+      </p>
+    </footer>
   </body>
   <script src="./05-lection3/02-modal/index.js"></script>
+  <script src="./components/tabs/tabs.js"></script>
 </html>

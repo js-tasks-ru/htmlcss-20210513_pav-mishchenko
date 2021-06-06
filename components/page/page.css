@@ -4,8 +4,9 @@
   height: 100%;
 }
 
-.page__tabs {
-  padding-left: 145px;
+.page__box {
+  margin-left: 135px;
+  margin-right: 135px;
 }
 
 .page__main {
@@ -33,7 +34,8 @@
     display: none;
   }
 
-  .page__tabs {
-    padding-left: 0;
+  .page__box {
+    margin-left: 0;
+    margin-right: 0;
   }
 }

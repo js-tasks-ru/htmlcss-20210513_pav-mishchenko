@@ -5,8 +5,8 @@
 }
 
 .page__box {
-  margin-left: 135px;
-  margin-right: 135px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .page__main {

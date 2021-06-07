@@ -35,8 +35,13 @@
   transform: translate(-50%, 100%);
 }
 
-.tooltip__icon:hover ~ .tooltip__msg {
+.tooltip__icon:hover ~ .tooltip__msg,
+.tooltip_open .tooltip__msg {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tooltip_no-events {
+  pointer-events: none;
 }

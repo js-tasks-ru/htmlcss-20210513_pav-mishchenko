@@ -11,3 +11,7 @@
   text-transform: uppercase;
   margin-right: 1em;
 }
+
+.button_no-events {
+  pointer-events: none;
+}

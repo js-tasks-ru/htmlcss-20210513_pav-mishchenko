@@ -1,21 +1,29 @@
 /* reset */
-@import './_reset.css';
+@import 'reset.css';
 
 /* globals */
 @import '../fonts/fonts.css';
-@import './_typography.css';
-@import './_variables.css';
-@import './_fonts.css';
-@import './_grid.css';
+@import 'typography.css';
+@import 'variables.css';
+@import 'fonts.css';
+@import 'grid.css';
 
 /* pages */
 @import '../../components/page-template/page-template.css';
 
 /* components */
-@import '../../components/page/page.css';
-@import '../../components/header/header.css';
-@import '../../components/cards/cards.css';
-@import '../../components/card/card.css';
-@import '../../components/menu/menu.css';
-@import '../../components/component/component.css';
+@import '../../03-lection1/02-accordion/accordion/accordion.css';
+@import '../../06-lection4/01-avatar/avatar.css';
 @import '../../03-lection1/01-button/button/button.css';
+@import '../../05-lection3/03-calendar/calendar.css';
+@import '../../components/card/card.css';
+@import '../../components/cards/cards.css';
+@import '../../components/component/component.css';
+@import '../../components/header/header.css';
+@import '../../04-lection2/01-histogram/histogram.css';
+@import '../../components/menu/menu.css';
+@import '../../05-lection3/02-modal/modal.css';
+@import '../../components/page/page.css';
+@import '../../04-lection2/02-skeleton/skeleton.css';
+@import '../../components/tabs/tabs.css';
+@import '../../05-lection3/01-tooltip/tooltip.css';

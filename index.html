@@ -25,52 +25,824 @@
         <div class="header__title">
           <h1>Reusable component library</h1>
         </div>
+
+        <div class="tabs">
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#all-tab"
+            data-id="all"
+            checked
+          />
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#complex-tab"
+            data-id="complex"
+          />
+          <input
+            type="radio"
+            name="tab"
+            class="tabs__input"
+            id="#simple-tab"
+            data-id="simple"
+          />
+
+          <div class="tabs__scroller">
+            <label class="tabs__label" for="#all-tab">All components</label>
+            <label class="tabs__label" for="#complex-tab">Complex</label>
+            <label class="tabs__label" for="#simple-tab">Simple</label>
+          </div>
+        </div>
       </header>
       <main class="page__main">
         <div class="page__content">
-          <div class="cards">
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Tooltip</div>
-              <div class="card__sub-title">Tooltip</div>
+          <div class="page__box">
+            <div class="tabs__content tabs__content_open" data-id="all">
+              <div class="cards">
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="tooltip tooltip_open tooltip_no-events">
+                      <div class="tooltip__icon">
+                        <img src="./assets/images/sprite.svg#Help" />
+                      </div>
+                      <div class="tooltip__msg">Helper Text</div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html"
+                      class="card__title"
+                      title="Tooltip"
+                      >Tooltip</a
+                    >
+                    <div class="card__sub-title" title="Tooltip">Tooltip</div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content"></div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
+                      class="card__title"
+                      title="Custom form element"
+                      >Custom form element</a
+                    >
+                    <div class="card__sub-title" title="Custom form element">
+                      Custom form element
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="calendar">
+                      <div class="calendar__title"><h4>October 2019</h4></div>
+                      <div class="calendar__wrapper">
+                        <div class="calendar__inner">
+                          <div class="calendar__cell calendar__cell_day">
+                            Mon
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Tue
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Wed
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Thu
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Fri
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Sat
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Sun
+                          </div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div class="calendar__cell calendar__cell_number">
+                            1
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            2
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            3
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            4
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            5
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            6
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            7
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            8
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            9
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            10
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            11
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            12
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            13
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            14
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            15
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            16
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            17
+                          </div>
+
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active
+                              calendar__cell_number
+                            "
+                          >
+                            18
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            19
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            20
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            21
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            22
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active
+                              calendar__cell_number
+                            "
+                          >
+                            23
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            24
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            25
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            26
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            27
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            28
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            29
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            30
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            31
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/calendar.html"
+                      class="card__title"
+                      title="Calendar"
+                      >Calendar</a
+                    >
+                    <div class="card__sub-title" title="Calendar">Calendar</div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <button class="button button_primary button_no-events" id="modal-open">
+                      Open modal
+                    </button>
+                    <div class="modal" id="modal">
+                      <div class="modal__content">
+                        <div class="modal__title">Modal title</div>
+                        <div class="modal__body">
+                          Amet minim mollit non deserunt ullamco est sit aliqua
+                          dolor do amet sint. Velit officia consequat duis enim
+                          velit mollit. Exercitation veniam consequat sunt
+                          nostrud amet. Amet minim mollit non deserunt ullamco
+                          est sit aliqua dolor do amet sint. Velit officia
+                          consequat duis enim velit mollit. Exercitation veniam
+                          consequat sunt nostrud amet.
+                        </div>
+                        <div class="modal__close" id="modal-close">
+                          <img src="./assets/images/sprite.svg#x" width="15" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/modal.html"
+                      class="card__title"
+                      title="Modal dialog"
+                      >Modal dialog</a
+                    >
+                    <div class="card__sub-title" title="Modal dialog">
+                      Modal dialog
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="histogram">
+                      <div class="histogram__title">
+                        <p>Total orders</p>
+                        <a href="#" class="histogram__link">View all</a>
+                      </div>
+                      <div class="histogram__total"><h4>50254</h4></div>
+                      <div class="histogram__chart">
+                        <div
+                          class="histogram__chart-column"
+                          data-height="10"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="20"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="20"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/histogram.html"
+                      class="card__title"
+                      title="Histogram"
+                      >Histogram</a
+                    >
+                    <div class="card__sub-title" title="Histogram">
+                      Histogram
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="avatar avatar_large">
+                      <img
+                        class="avatar__image"
+                        src="./assets/images/avatar.png"
+                        alt="User Avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html"
+                      class="card__title"
+                      title="Avatar"
+                      >Avatar</a
+                    >
+                    <div class="card__sub-title" title="Avatar">Avatar</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Custom form element</div>
-              <div class="card__sub-title">Custom form element</div>
+            <div class="tabs__content" data-id="complex">
+              <div class="cards">
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="calendar">
+                      <div class="calendar__title"><h4>October 2019</h4></div>
+                      <div class="calendar__wrapper">
+                        <div class="calendar__inner">
+                          <div class="calendar__cell calendar__cell_day">
+                            Mon
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Tue
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Wed
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Thu
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Fri
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Sat
+                          </div>
+                          <div class="calendar__cell calendar__cell_day">
+                            Sun
+                          </div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div
+                            class="calendar__cell calendar__cell_number"
+                          ></div>
+                          <div class="calendar__cell calendar__cell_number">
+                            1
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            2
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            3
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            4
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            5
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            6
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            7
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            8
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            9
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            10
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            11
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            12
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            13
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            14
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            15
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            16
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            17
+                          </div>
+
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active
+                              calendar__cell_number
+                            "
+                          >
+                            18
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            19
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            20
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            21
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active-zone
+                              calendar__cell_number
+                            "
+                          >
+                            22
+                          </div>
+                          <div
+                            class="
+                              calendar__cell
+                              calendar__cell_active
+                              calendar__cell_number
+                            "
+                          >
+                            23
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            24
+                          </div>
+
+                          <div class="calendar__cell calendar__cell_number">
+                            25
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            26
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            27
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            28
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            29
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            30
+                          </div>
+                          <div class="calendar__cell calendar__cell_number">
+                            31
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/calendar.html"
+                      class="card__title"
+                      title="Calendar"
+                      >Calendar</a
+                    >
+                    <div class="card__sub-title" title="Calendar">Calendar</div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <button class="button button_primary" id="modal-open">
+                      Open modal
+                    </button>
+                    <div class="modal" id="modal">
+                      <div class="modal__content">
+                        <div class="modal__title">Modal title</div>
+                        <div class="modal__body">
+                          Amet minim mollit non deserunt ullamco est sit aliqua
+                          dolor do amet sint. Velit officia consequat duis enim
+                          velit mollit. Exercitation veniam consequat sunt
+                          nostrud amet. Amet minim mollit non deserunt ullamco
+                          est sit aliqua dolor do amet sint. Velit officia
+                          consequat duis enim velit mollit. Exercitation veniam
+                          consequat sunt nostrud amet.
+                        </div>
+                        <div class="modal__close" id="modal-close">
+                          <img src="./assets/images/sprite.svg#x" width="15" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/modal.html"
+                      class="card__title"
+                      title="Modal dialog"
+                      >Modal dialog</a
+                    >
+                    <div class="card__sub-title" title="Modal dialog">
+                      Modal dialog
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="histogram">
+                      <div class="histogram__title">
+                        <p>Total orders</p>
+                        <a href="#" class="histogram__link">View all</a>
+                      </div>
+                      <div class="histogram__total"><h4>50254</h4></div>
+                      <div class="histogram__chart">
+                        <div
+                          class="histogram__chart-column"
+                          data-height="10"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="20"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="70"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="20"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="30"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="100"
+                        ></div>
+                        <div
+                          class="histogram__chart-column"
+                          data-height="50"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/histogram.html"
+                      class="card__title"
+                      title="Histogram"
+                      >Histogram</a
+                    >
+                    <div class="card__sub-title" title="Histogram">
+                      Histogram
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Calendar</div>
-              <div class="card__sub-title">Calendar</div>
-            </div>
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Modal dialog</div>
-              <div class="card__sub-title">Modal dialog</div>
-            </div>
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Histogram</div>
-              <div class="card__sub-title">Histogram</div>
-            </div>
-            <div class="cards__item card">
-              <div class="card__content"></div>
-              <div class="card__title">Avatar</div>
-              <div class="card__sub-title">Avatar</div>
+            <div class="tabs__content" data-id="simple">
+              <div class="cards">
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="tooltip">
+                      <div class="tooltip__icon">
+                        <img src="./assets/images/sprite.svg#Help" />
+                      </div>
+                      <div class="tooltip__msg">Helper Text</div>
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html"
+                      class="card__title"
+                      title="Tooltip"
+                      >Tooltip</a
+                    >
+                    <div class="card__sub-title" title="Tooltip">Tooltip</div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content"></div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
+                      class="card__title"
+                      title="Custom form element"
+                      >Custom form element</a
+                    >
+                    <div class="card__sub-title" title="Custom form element">
+                      Custom form element
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__item card">
+                  <div class="card__content">
+                    <div class="avatar avatar_large">
+                      <img
+                        class="avatar__image"
+                        src="./assets/images/avatar.png"
+                        alt="User Avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="card__footer">
+                    <a
+                      href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html"
+                      class="card__title"
+                      title="Avatar"
+                      >Avatar</a
+                    >
+                    <div class="card__sub-title" title="Avatar">Avatar</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
-      <footer class="page__footer">
-        <h2 class="page__footer-title">About</h2>
-        <p>
-          This project is a collection of professionally designed, pre-built,
-          fully responsive HTML snippets you can drop into your projects. Get
-          started by checking out our free preview components, or browsing the
-          PNG previews in the categories you're most curious about.
-        </p>
-      </footer>
     </div>
+
+    <footer class="page__footer">
+      <h2 class="page__footer-title">About</h2>
+      <p>
+        This project is a collection of professionally designed, pre-built,
+        fully responsive HTML snippets you can drop into your projects. Get
+        started by checking out our free preview components, or browsing the PNG
+        previews in the categories you're most curious about.
+      </p>
+    </footer>
   </body>
+  <script src="./05-lection3/02-modal/index.js"></script>
+  <script src="./components/tabs/tabs.js"></script>
 </html>

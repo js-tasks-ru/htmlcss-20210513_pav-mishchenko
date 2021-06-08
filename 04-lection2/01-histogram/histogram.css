@@ -4,6 +4,7 @@
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   padding: 16px 24px 24px;
+  width: 100%;
 }
 
 .histogram__title {

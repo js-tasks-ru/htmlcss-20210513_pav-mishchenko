@@ -1,5 +1,28 @@
 .component {
   background-color: var(--white);
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr 2fr;
+}
+
+.component__title {
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--grey-4);
+  padding: 32px 48px;
+}
+
+.component__render {
+  padding: 0 48px;
+}
+
+.component__code {
+}
+
+.component__tabs {
+  padding: 32px 8px 0;
+  border-bottom: 1px solid var(--grey-2);
 }
 
 @media screen and (max-width: 768px) {

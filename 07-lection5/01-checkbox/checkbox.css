@@ -1,3 +1,7 @@
+.checkbox_no-events {
+  pointer-events: none;
+}
+
 .checkbox__input {
   width: 0;
   height: 0;

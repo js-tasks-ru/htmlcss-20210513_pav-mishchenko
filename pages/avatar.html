@@ -62,8 +62,8 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Avatar</div>
-          <div class="component__render">
+          <div class="component__title component__box">Avatar</div>
+          <div class="component__render component__box">
             <div class="avatar avatar_large">
               <img
                 class="avatar__image"
@@ -72,28 +72,35 @@
               />
             </div>
           </div>
+
           <div class="component__code">
-            <div class="tabs">
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#html-tab"
-                checked
-              />
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#css-tab"
-              />
+            <div class="component__box">
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#html-tab"
+                  checked
+                  data-id="html"
+                />
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#css-tab"
+                  data-id="css"
+                />
 
-              <div class="tabs__scroller component__tabs">
-                <label class="tabs__label" for="#html-tab">HTML</label>
-                <label class="tabs__label" for="#css-tab">CSS</label>
+                <div class="tabs__scroller">
+                  <label class="tabs__label" for="#html-tab">HTML</label>
+                  <label class="tabs__label" for="#css-tab">CSS</label>
+                </div>
               </div>
+            </div>
 
-              <div class="tabs__content tabs__html">
+            <div class="component__code-content">
+              <div class="tabs__content tabs__content_open" data-id="html">
                 <xmp>
                   <div class="avatar">
                     <img
@@ -104,7 +111,7 @@
                   </div>
                 </xmp>
               </div>
-              <div class="tabs__content tabs__css">
+              <div class="tabs__content tabs__css" data-id="css">
                 <xmp
 >
                   .avatar {
@@ -139,4 +146,5 @@
       </footer>
     </div>
   </body>
+  <script src="./../components/tabs/tabs.js"></script>
 </html>

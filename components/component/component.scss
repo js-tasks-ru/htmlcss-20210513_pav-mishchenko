@@ -4,7 +4,7 @@ $breakpoint-tablet: 768px;
   background-color: var(--white);
   border-radius: 12px;
   display: grid;
-  grid-template-rows: auto 1fr 2fr;
+  grid-template-rows: auto auto auto;
 
   &__box {
     padding-left: 48px;
@@ -22,6 +22,9 @@ $breakpoint-tablet: 768px;
   &__render {
     padding-top: 32px;
     padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row-gap: 16px;
   }
 
   &__code-content {

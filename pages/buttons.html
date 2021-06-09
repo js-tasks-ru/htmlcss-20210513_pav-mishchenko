@@ -36,11 +36,11 @@
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
             >
-              <a
-                      class="menu__section-item"
-                      href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
+            <a
+              class="menu__section-item menu__section-item_active"
+              href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
               >Buttons</a
-              >
+            >
           </div>
           <div class="menu__section">
             <h4 class="menu__section-title">Containers</h4>
@@ -55,7 +55,7 @@
               >Calendar</a
             >
             <a
-              class="menu__section-item menu__section-item_active"
+              class="menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/modal.html"
               >Modal dialog</a
             >
@@ -67,27 +67,14 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title component__box">Modal dialog</div>
+          <div class="component__title component__box">Buttons</div>
           <div class="component__render component__box">
-            <button class="button button_primary" id="modal-open">
-              Open modal
-            </button>
-            <div class="modal" id="modal">
-              <div class="modal__content">
-                <div class="modal__title">Modal title</div>
-                <div class="modal__body">
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet. Amet minim
-                  mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  Velit officia consequat duis enim velit mollit. Exercitation
-                  veniam consequat sunt nostrud amet.
-                </div>
-                <div class="modal__close" id="modal-close">
-                  <img src="./../assets/images/sprite.svg#x" width="15" />
-                </div>
-              </div>
-            </div>
+            <button class="button button_primary">Primary</button>
+            <button class="button button_secondary">Secondary</button>
+            <button class="button button_alternate">Alternate</button>
+            <button class="button button_primary" disabled>Primary</button>
+            <button class="button button_secondary" disabled>Secondary</button>
+            <button class="button button_alternate" disabled>Alternate</button>
           </div>
 
           <div class="component__code">
@@ -119,68 +106,67 @@
             <div class="component__code-content">
               <div class="tabs__content tabs__content_open" data-id="html">
                 <xmp>
-                  <div class="modal" id="modal">
-                    <div class="modal__content">
-                      <div class="modal__title">Modal title</div>
-                      <div class="modal__body">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-                        sint. Velit officia consequat duis enim velit mollit. Exercitation
-                        veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
-                        ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-                        amet.
-                      </div>
-                      <div class="modal__close" id="modal-close">
-                        <img src="./../assets/images/sprite.svg#x" width="15" />
-                      </div>
-                    </div>
-                  </div>
-            </xmp>
+                  <button class="button button_primary">Primary</button>
+                  <button class="button button_secondary">Secondary</button>
+                  <button class="button button_alternate">Alternate</button>
+                  <button class="button button_primary" disabled>Primary</button>
+                  <button class="button button_secondary" disabled>Secondary</button>
+                  <button class="button button_alternate" disabled>Alternate</button>
+                </xmp>
               </div>
               <div class="tabs__content tabs__css" data-id="css">
                 <xmp
 >
-                  .modal {
-                  display: none;
-                  position: fixed;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  background: var(--grey-half-transparent);
-                  z-index: 1;
-                  }
-
-                  .modal__content {
-                  position: fixed;
-                  width: 428px;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  padding: 30px 40px;
+                  .button {
+                  width: 189px;
+                  height: 48px;
                   border-radius: 8px;
-                  background: white;
-                  }
-
-                  .modal__title {
-                  color: var(--grey-7);
-                  font-weight: 600;
-                  font-size: 20px;
-                  line-height: 24px;
-                  }
-
-                  .modal__close {
-                  position: absolute;
-                  right: 15px;
-                  top: 15px;
+                  color: var(--white);
+                  border: none;
                   cursor: pointer;
                   }
 
-                  .modal__body {
-                  margin-top: 14px;
+                  .button:disabled {
+                  opacity: 0.5;
+                  cursor: default;
+                  pointer-events: none;
+                  }
+
+                  .button:focus,
+                  .button:active {
+                  outline: none;
+                  }
+
+                  .button_primary {
+                  background-color: var(--primary);
+                  }
+
+                  .button_primary:hover:not(:disabled),
+                  .button_primary:focus,
+                  .button_primary:active {
+                  background-color: var(--primary-dark);
+                  }
+
+                  .button_secondary {
+                  background-color: var(--secondary);
+                  }
+
+                  .button_secondary:hover:not(:disabled),
+                  .button_secondary:focus,
+                  .button_secondary:active {
+                  background-color: var(--secondary-dark);
+                  }
+
+                  .button_alternate {
+                  background-color: var(--alternate);
+                  border: 1px solid var(--grey-3);
                   color: var(--grey-4);
-                  font-size: 16px;
-                  line-height: 24px;
+                  }
+
+                  .button_alternate:hover:not(:disabled),
+                  .button_alternate:focus,
+                  .button_alternate:active {
+                  border: 1px solid var(--black);
                   }
 
                 </xmp>
@@ -195,5 +181,4 @@
     </div>
   </body>
   <script src="./../components/tabs/tabs.js"></script>
-  <script src="./../05-lection3/02-modal/index.js"></script>
 </html>

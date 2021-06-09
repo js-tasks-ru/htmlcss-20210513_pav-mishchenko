@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.calendar_w300 {
+  width: 300px;
+}
+
 .calendar__title {
   text-align: center;
   padding-bottom: 28px;

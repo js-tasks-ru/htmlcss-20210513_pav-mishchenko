@@ -1,0 +1,35 @@
+$breakpoint-tablet: 768px;
+
+.component {
+  background-color: var(--white);
+  border-radius: 12px;
+  display: grid;
+  grid-template-rows: auto 1fr 2fr;
+
+  &__box {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--grey-4);
+    padding-top: 32px;
+  }
+
+  &__render {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__code-content {
+    border-top: 1px solid var(--grey-2);
+    padding: 0 48px;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    width: 100%;
+  }
+}

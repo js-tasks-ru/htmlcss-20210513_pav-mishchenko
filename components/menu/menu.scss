@@ -29,11 +29,19 @@ $breakpoint-tablet: 768px;
   }
 
   @media screen and (max-width: $breakpoint-tablet) {
-    display: none;
+    //display: none;
+
+
 
     &_open {
-      display: block;
+      //display: block;
       padding: 16px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--grey-5);
     }
 
     &__section {

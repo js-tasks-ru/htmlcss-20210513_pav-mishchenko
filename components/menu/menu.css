@@ -20,11 +20,14 @@
   color: var(--notification); }
 
 @media screen and (max-width: 768px) {
-  .menu {
-    display: none; }
   .menu_open {
-    display: block;
-    padding: 16px; }
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--grey-5); }
   .menu__section {
     border-top: 1px solid var(--grey-2);
     padding: 24px 0;

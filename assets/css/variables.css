@@ -17,6 +17,7 @@
   --grey-5: #f9fafc;
   --grey-6: #90a0b7;
   --grey-7: #334d6e;
+  --grey-8: #ffffff75;
   --grey-half-transparent: rgba(196, 196, 196, 0.5);
 
   --error: var(--red);
@@ -30,4 +31,29 @@
   --alternate: var(--white);
   --active: var(--blue-light);
   --active-secondary: var(--blue-x-light);
+
+  --text-primary: var(--black);
+  --text-secondary: var(--grey-3);
+  --active-text-color: var(--text-primary);
+  --main-bg: var(--light-bg);
+  --grey-bg: var(--grey-1);
+  --white-bg: var(--white);
+  --light-bg: var(--white);
+  --dark-bg: var(--black);
+  --card-bg: var(--white);
+  --font-color: var(--text-primary);
+  --input-text-color: var(--grey-4);
+}
+
+html[data-theme-dark=''] {
+  --main-bg: var(--black);
+  --font-color: var(--grey-8);
+  --dark-bg: var(--grey-1);
+  --white-bg: var(--black);
+  --light-bg: var(--grey-4);
+  --grey-bg: var(--grey-4);
+  --card-bg: var(--black);
+  --text-primary: var(--white);
+  --active-text-color: var(--grey-2);
+  --input-text-color: var(--font-color);
 }

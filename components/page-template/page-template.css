@@ -2,11 +2,12 @@
   height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  background-color: var(--grey-1);
+  background-color: var(--grey-bg);
   grid-row-gap: 36px;
 }
 
 .page-template__main {
+  background-color: var(--grey-bg);
   display: grid;
   grid-template-columns: auto 1fr;
   grid-column-gap: 56px;

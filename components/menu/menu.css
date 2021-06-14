@@ -1,9 +1,15 @@
+.menu {
+  background-color: var(--grey-bg);
+}
+
 .menu__section {
   margin-bottom: 32px;
+  background-color: var(--grey-bg);
 }
 
 .menu__section-title {
   margin-bottom: 16px;
+  background-color: var(--grey-bg);
 }
 
 .menu__section-item {

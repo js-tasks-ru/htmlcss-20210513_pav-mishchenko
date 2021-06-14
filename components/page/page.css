@@ -11,7 +11,7 @@
 
 .page__main {
   flex-grow: 1;
-  background-color: var(--grey-5);
+  background-color: var(--grey-bg);
   border-top: 1px solid var(--grey-2);
   border-bottom: 1px solid var(--grey-2);
 }
@@ -19,6 +19,7 @@
 .page__footer {
   padding: 70px 417px 70px 383px;
   text-align: center;
+  background-color: var(--main-bg);
 }
 
 .page__footer-title {
@@ -27,6 +28,7 @@
 
 .page__content {
   margin: 0 auto;
+  background-color: var(--grey-bg);
 }
 
 @media screen and (max-width: 768px) {

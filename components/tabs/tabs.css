@@ -59,6 +59,6 @@
 .tabs__input[id='#css-tab']:checked
   ~ .tabs__scroller
   .tabs__label[for='#css-tab'] {
-  color: var(--black);
-  border-bottom: 5px solid var(--black);
+  color: var(--active-text-color);
+  border-bottom: 5px solid var(--active-text-color);
 }

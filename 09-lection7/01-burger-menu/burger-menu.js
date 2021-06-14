@@ -1,19 +1,13 @@
 const menu = document.getElementById('burger-menu');
-const menuClose = document.getElementById('burger-menu-close');
 const menuOpen = document.getElementById('burger-menu-open');
 
-if (menuOpen) {
-    menuOpen.addEventListener('click', function() {
-        if (menu) {
-            menu.setAttribute('data-open', '');
-        }
-    });
-}
-
-if (menuClose) {
-    menuClose.addEventListener('click', function() {
-        if (menu) {
-            menu.removeAttribute('data-open');
-        }
-    });
+if (menuOpen && menu) {
+  menuOpen.addEventListener('click', function () {
+    const isOpen = menu.getAttribute('data-open');
+    if (isOpen === null) {
+      menu.setAttribute('data-open', '');
+    } else {
+      menu.removeAttribute('data-open');
+    }
+  });
 }

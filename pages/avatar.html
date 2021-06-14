@@ -2,12 +2,13 @@
 <!-- Главная страница -->
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
     <div class="page-template">
       <header class="header">
-        <div class="header__menu-toggle"></div>
+        <div class="header__menu-toggle" id='burger-menu-open'></div>
         <div class="header__controls">
           <div class="header__logo">
             <svg
@@ -33,39 +34,39 @@
         </div>
       </header>
       <main class="page-template__main">
-        <div class="menu">
-          <div class="menu__section">
-            <h4 class="menu__section-title">Elements</h4>
+        <div class="burger-menu" id='burger-menu'>
+          <div class="burger-menu__section">
+            <h4 class="burger-menu__section-title">Elements</h4>
             <a
-              class="menu__section-item menu__section-item_active"
+              class="burger-menu__section-item burger-menu__section-item_active"
               href="/htmlcss-20210513_pav-mishchenko/pages/avatar.html"
               >Avatar</a
             >
             <a
-              class="menu__section-item"
+              class="burger-menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
             >
           </div>
-          <div class="menu__section">
-            <h4 class="menu__section-title">Containers</h4>
+          <div class="burger-menu__section">
+            <h4 class="burger-menu__section-title">Containers</h4>
             <a
-              class="menu__section-item"
+              class="burger-menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/tooltip.html"
               >Tooltip</a
             >
             <a
-              class="menu__section-item"
+              class="burger-menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/calendar.html"
               >Calendar</a
             >
             <a
-              class="menu__section-item"
+              class="burger-menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/modal.html"
               >Modal dialog</a
             >
             <a
-              class="menu__section-item"
+              class="burger-menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/histogram.html"
               >Histogram</a
             >
@@ -149,5 +150,6 @@
       </footer>
     </div>
   </body>
+  <script src="../09-lection7/01-burger-menu/burger-menu.js"></script>
   <script src="./../10-lection8/01-theme-changer/theme-changer.js"></script>
 </html>

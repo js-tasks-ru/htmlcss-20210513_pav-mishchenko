@@ -11,7 +11,7 @@
 }
 
 .tooltip__msg {
-  display: none;
+  opacity: 0;
   height: 45px;
   width: 129px;
   position: absolute;
@@ -37,9 +37,11 @@
 
 .tooltip__icon:hover ~ .tooltip__msg,
 .tooltip_open .tooltip__msg {
+  opacity: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.2s linear, transform 0.1s linear;
 }
 
 .tooltip_no-events {

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "sass": "node-sass -w components/ -o components/ -r"
   },
   "husky": {
     "hooks": {
@@ -27,6 +28,7 @@
   "dependencies": {
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
+    "node-sass": "^6.0.0",
     "normalize.css": "^8.0.1",
     "prettier": "^2.2.1"
   }

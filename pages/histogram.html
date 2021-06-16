@@ -36,6 +36,11 @@
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
             >
+              <a
+                      class="menu__section-item"
+                      href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
+              >Buttons</a
+              >
           </div>
           <div class="menu__section">
             <h4 class="menu__section-title">Containers</h4>
@@ -62,34 +67,172 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Component title</div>
-          <div class="component__render"></div>
+          <div class="component__title component__box">Histogram</div>
+          <div class="component__render component__box">
+            <div class="histogram">
+              <div class="histogram__title">
+                <p>Total orders</p>
+                <a href="#" class="histogram__link">View all</a>
+              </div>
+              <div class="histogram__total"><h4>50254</h4></div>
+              <div class="histogram__chart">
+                <div class="histogram__chart-column" data-height="10"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+                <div class="histogram__chart-column" data-height="30"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+                <div class="histogram__chart-column" data-height="70"></div>
+                <div class="histogram__chart-column" data-height="20"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+                <div class="histogram__chart-column" data-height="30"></div>
+                <div class="histogram__chart-column" data-height="100"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+                <div class="histogram__chart-column" data-height="30"></div>
+                <div class="histogram__chart-column" data-height="100"></div>
+                <div class="histogram__chart-column" data-height="70"></div>
+                <div class="histogram__chart-column" data-height="100"></div>
+                <div class="histogram__chart-column" data-height="70"></div>
+                <div class="histogram__chart-column" data-height="20"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+                <div class="histogram__chart-column" data-height="30"></div>
+                <div class="histogram__chart-column" data-height="100"></div>
+                <div class="histogram__chart-column" data-height="50"></div>
+              </div>
+            </div>
+          </div>
+
           <div class="component__code">
-            <div class="tabs">
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#html-tab"
-                checked
-              />
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#css-tab"
-              />
+            <div class="component__box">
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#html-tab"
+                  checked
+                  data-id="html"
+                />
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#css-tab"
+                  data-id="css"
+                />
 
-              <div class="tabs__scroller component__tabs">
-                <label class="tabs__label" for="#html-tab">HTML</label>
-                <label class="tabs__label" for="#css-tab">CSS</label>
+                <div class="tabs__scroller">
+                  <label class="tabs__label" for="#html-tab">HTML</label>
+                  <label class="tabs__label" for="#css-tab">CSS</label>
+                </div>
               </div>
+            </div>
 
-              <div class="tabs__content tabs__html">
-                <xmp></xmp>
+            <div class="component__code-content">
+              <div class="tabs__content tabs__content_open" data-id="html">
+                <xmp>
+                  <div class="histogram">
+                    <div class="histogram__title">
+                      <p>Total orders</p>
+                      <a href="#" class="histogram__link">View all</a>
+                    </div>
+                    <div class="histogram__total"><h4>50254</h4></div>
+                    <div class="histogram__chart">
+                      <div class="histogram__chart-column" data-height="10"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                      <div class="histogram__chart-column" data-height="30"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                      <div class="histogram__chart-column" data-height="70"></div>
+                      <div class="histogram__chart-column" data-height="20"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                      <div class="histogram__chart-column" data-height="30"></div>
+                      <div class="histogram__chart-column" data-height="100"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                      <div class="histogram__chart-column" data-height="30"></div>
+                      <div class="histogram__chart-column" data-height="100"></div>
+                      <div class="histogram__chart-column" data-height="70"></div>
+                      <div class="histogram__chart-column" data-height="100"></div>
+                      <div class="histogram__chart-column" data-height="70"></div>
+                      <div class="histogram__chart-column" data-height="20"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                      <div class="histogram__chart-column" data-height="30"></div>
+                      <div class="histogram__chart-column" data-height="100"></div>
+                      <div class="histogram__chart-column" data-height="50"></div>
+                    </div>
+                  </div>
+            </xmp>
               </div>
-              <div class="tabs__content tabs__css">
-                <xmp></xmp>
+              <div class="tabs__content tabs__css" data-id="css">
+                <xmp
+>
+                  .histogram {
+                  display: flex;
+                  flex-direction: column;
+                  border: 1px solid var(--grey-3);
+                  border-radius: 8px;
+                  padding: 16px 24px 24px;
+                  width: 100%;
+                  }
+
+                  .histogram__title {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  }
+
+                  .histogram__link {
+                  color: var(--blue);
+                  text-decoration: none;
+                  margin-top: 3px;
+                  }
+
+                  .histogram__chart {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: flex-end;
+                  margin-left: -1px;
+                  height: 50px;
+                  padding-top: 50px;
+                  box-sizing: content-box;
+                  }
+
+                  .histogram__chart-column {
+                  background-color: var(--blue);
+                  flex-grow: 1;
+                  margin-left: 1px;
+                  }
+
+                  .histogram__chart-column[data-height='10'] {
+                  height: 10%;
+                  }
+                  .histogram__chart-column[data-height='20'] {
+                  height: 20%;
+                  }
+                  .histogram__chart-column[data-height='30'] {
+                  height: 30%;
+                  }
+                  .histogram__chart-column[data-height='40'] {
+                  height: 40%;
+                  }
+                  .histogram__chart-column[data-height='50'] {
+                  height: 50%;
+                  }
+                  .histogram__chart-column[data-height='60'] {
+                  height: 60%;
+                  }
+                  .histogram__chart-column[data-height='70'] {
+                  height: 70%;
+                  }
+                  .histogram__chart-column[data-height='80'] {
+                  height: 80%;
+                  }
+                  .histogram__chart-column[data-height='90'] {
+                  height: 90%;
+                  }
+                  .histogram__chart-column[data-height='100'] {
+                  height: 100%;
+                  }
+
+                </xmp>
               </div>
             </div>
           </div>
@@ -100,4 +243,5 @@
       </footer>
     </div>
   </body>
+  <script src="./../components/tabs/tabs.js"></script>
 </html>

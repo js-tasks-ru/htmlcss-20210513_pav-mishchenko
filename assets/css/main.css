@@ -6,7 +6,6 @@
 @import 'typography.css';
 @import 'variables.css';
 @import 'fonts.css';
-@import 'grid.css';
 
 /* pages */
 @import '../../components/page-template/page-template.css';
@@ -18,12 +17,16 @@
 @import '../../05-lection3/03-calendar/calendar.css';
 @import '../../components/card/card.css';
 @import '../../components/cards/cards.css';
+@import '../../07-lection5/01-checkbox/checkbox.css';
 @import '../../components/component/component.css';
+@import '../../07-lection5/04-input/input.css';
 @import '../../components/header/header.css';
 @import '../../04-lection2/01-histogram/histogram.css';
 @import '../../components/menu/menu.css';
 @import '../../05-lection3/02-modal/modal.css';
 @import '../../components/page/page.css';
+@import '../../07-lection5/02-radio/radio.css';
 @import '../../04-lection2/02-skeleton/skeleton.css';
 @import '../../components/tabs/tabs.css';
+@import '../../07-lection5/03-toggler/toggler.css';
 @import '../../05-lection3/01-tooltip/tooltip.css';

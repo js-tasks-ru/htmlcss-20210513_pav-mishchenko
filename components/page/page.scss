@@ -1,0 +1,43 @@
+$breakpoint-tablet: 768px;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__box {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__main {
+    flex-grow: 1;
+    background-color: var(--grey-5);
+    border-top: 1px solid var(--grey-2);
+    border-bottom: 1px solid var(--grey-2);
+  }
+
+  &__footer {
+    padding: 70px 417px 70px 383px;
+    text-align: center;
+  }
+
+  &__footer-title {
+    margin-bottom: 32px;
+  }
+
+  &__content {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    &__footer {
+      display: none;
+    }
+
+    &__box {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

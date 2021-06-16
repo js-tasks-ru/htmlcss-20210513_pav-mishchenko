@@ -2,6 +2,7 @@
 <!-- Главная страница -->
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
   </head>
   <body>
@@ -23,7 +24,7 @@
         </div>
       </header>
       <main class="page-template__main">
-        <div class="menu">
+        <div class="menu menu_open">
           <div class="menu__section">
             <h4 class="menu__section-title">Elements</h4>
             <a
@@ -35,6 +36,11 @@
               class="menu__section-item"
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
+            >
+            <a
+                    class="menu__section-item"
+                    href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
+            >Buttons</a
             >
           </div>
           <div class="menu__section">
@@ -62,8 +68,8 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Avatar</div>
-          <div class="component__render">
+          <div class="component__title component__box">Avatar</div>
+          <div class="component__render component__box">
             <div class="avatar avatar_large">
               <img
                 class="avatar__image"
@@ -72,28 +78,35 @@
               />
             </div>
           </div>
+
           <div class="component__code">
-            <div class="tabs">
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#html-tab"
-                checked
-              />
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#css-tab"
-              />
+            <div class="component__box">
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#html-tab"
+                  checked
+                  data-id="html"
+                />
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#css-tab"
+                  data-id="css"
+                />
 
-              <div class="tabs__scroller component__tabs">
-                <label class="tabs__label" for="#html-tab">HTML</label>
-                <label class="tabs__label" for="#css-tab">CSS</label>
+                <div class="tabs__scroller">
+                  <label class="tabs__label" for="#html-tab">HTML</label>
+                  <label class="tabs__label" for="#css-tab">CSS</label>
+                </div>
               </div>
+            </div>
 
-              <div class="tabs__content tabs__html">
+            <div class="component__code-content">
+              <div class="tabs__content tabs__content_open" data-id="html">
                 <xmp>
                   <div class="avatar">
                     <img
@@ -104,7 +117,7 @@
                   </div>
                 </xmp>
               </div>
-              <div class="tabs__content tabs__css">
+              <div class="tabs__content tabs__css" data-id="css">
                 <xmp
 >
                   .avatar {
@@ -139,4 +152,5 @@
       </footer>
     </div>
   </body>
+  <script src="./../components/tabs/tabs.js"></script>
 </html>

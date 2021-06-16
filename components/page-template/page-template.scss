@@ -1,0 +1,39 @@
+$breakpoint-tablet: 768px;
+
+.page-template {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--grey-1);
+  grid-row-gap: 36px;
+
+  &__main {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 56px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1110px;
+    background-color: var(--grey-1);
+  }
+
+  &__footer {
+    padding: 56px 0;
+    text-align: center;
+    color: var(--grey-3);
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    grid-template-rows: auto 1fr;
+    grid-row-gap: 0;
+
+    &__main {
+      grid-template-columns: 1fr;
+    }
+
+    &__footer {
+      display: none;
+    }
+  }
+}

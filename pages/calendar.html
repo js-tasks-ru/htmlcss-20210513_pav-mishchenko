@@ -36,6 +36,11 @@
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
             >
+              <a
+                      class="menu__section-item"
+                      href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
+              >Buttons</a
+              >
           </div>
           <div class="menu__section">
             <h4 class="menu__section-title">Containers</h4>
@@ -62,34 +67,275 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Component title</div>
-          <div class="component__render"></div>
+          <div class="component__title component__box">Calendar</div>
+          <div class="component__render component__box">
+            <div class="calendar calendar_w300">
+              <div class="calendar__title"><h4>October 2019</h4></div>
+              <div class="calendar__wrapper">
+                <div class="calendar__inner">
+                  <div class="calendar__cell calendar__cell_day">Mon</div>
+                  <div class="calendar__cell calendar__cell_day">Tue</div>
+                  <div class="calendar__cell calendar__cell_day">Wed</div>
+                  <div class="calendar__cell calendar__cell_day">Thu</div>
+                  <div class="calendar__cell calendar__cell_day">Fri</div>
+                  <div class="calendar__cell calendar__cell_day">Sat</div>
+                  <div class="calendar__cell calendar__cell_day">Sun</div>
+                  <div class="calendar__cell calendar__cell_number"></div>
+                  <div class="calendar__cell calendar__cell_number"></div>
+                  <div class="calendar__cell calendar__cell_number"></div>
+                  <div class="calendar__cell calendar__cell_number"></div>
+                  <div class="calendar__cell calendar__cell_number">1</div>
+                  <div class="calendar__cell calendar__cell_number">2</div>
+                  <div class="calendar__cell calendar__cell_number">3</div>
+
+                  <div class="calendar__cell calendar__cell_number">4</div>
+                  <div class="calendar__cell calendar__cell_number">5</div>
+                  <div class="calendar__cell calendar__cell_number">6</div>
+                  <div class="calendar__cell calendar__cell_number">7</div>
+                  <div class="calendar__cell calendar__cell_number">8</div>
+                  <div class="calendar__cell calendar__cell_number">9</div>
+                  <div class="calendar__cell calendar__cell_number">10</div>
+
+                  <div class="calendar__cell calendar__cell_number">11</div>
+                  <div class="calendar__cell calendar__cell_number">12</div>
+                  <div class="calendar__cell calendar__cell_number">13</div>
+                  <div class="calendar__cell calendar__cell_number">14</div>
+                  <div class="calendar__cell calendar__cell_number">15</div>
+                  <div class="calendar__cell calendar__cell_number">16</div>
+                  <div class="calendar__cell calendar__cell_number">17</div>
+
+                  <div
+                          class="calendar__cell calendar__cell_active calendar__cell_number"
+                  >
+                    18
+                  </div>
+                  <div
+                          class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                  >
+                    19
+                  </div>
+                  <div
+                          class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                  >
+                    20
+                  </div>
+                  <div
+                          class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                  >
+                    21
+                  </div>
+                  <div
+                          class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                  >
+                    22
+                  </div>
+                  <div
+                          class="calendar__cell calendar__cell_active calendar__cell_number"
+                  >
+                    23
+                  </div>
+                  <div class="calendar__cell calendar__cell_number">24</div>
+
+                  <div class="calendar__cell calendar__cell_number">25</div>
+                  <div class="calendar__cell calendar__cell_number">26</div>
+                  <div class="calendar__cell calendar__cell_number">27</div>
+                  <div class="calendar__cell calendar__cell_number">28</div>
+                  <div class="calendar__cell calendar__cell_number">29</div>
+                  <div class="calendar__cell calendar__cell_number">30</div>
+                  <div class="calendar__cell calendar__cell_number">31</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="component__code">
-            <div class="tabs">
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#html-tab"
-                checked
-              />
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#css-tab"
-              />
+            <div class="component__box">
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#html-tab"
+                  checked
+                  data-id="html"
+                />
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#css-tab"
+                  data-id="css"
+                />
 
-              <div class="tabs__scroller component__tabs">
-                <label class="tabs__label" for="#html-tab">HTML</label>
-                <label class="tabs__label" for="#css-tab">CSS</label>
+                <div class="tabs__scroller">
+                  <label class="tabs__label" for="#html-tab">HTML</label>
+                  <label class="tabs__label" for="#css-tab">CSS</label>
+                </div>
               </div>
+            </div>
 
-              <div class="tabs__content tabs__html">
-                <xmp></xmp>
+            <div class="component__code-content">
+              <div class="tabs__content tabs__content_open" data-id="html">
+                <xmp>
+                  <div class="calendar">
+                    <div class="calendar__title"><h4>October 2019</h4></div>
+                    <div class="calendar__wrapper">
+                      <div class="calendar__inner">
+                        <div class="calendar__cell calendar__cell_day">Mon</div>
+                        <div class="calendar__cell calendar__cell_day">Tue</div>
+                        <div class="calendar__cell calendar__cell_day">Wed</div>
+                        <div class="calendar__cell calendar__cell_day">Thu</div>
+                        <div class="calendar__cell calendar__cell_day">Fri</div>
+                        <div class="calendar__cell calendar__cell_day">Sat</div>
+                        <div class="calendar__cell calendar__cell_day">Sun</div>
+                        <div class="calendar__cell calendar__cell_number"></div>
+                        <div class="calendar__cell calendar__cell_number"></div>
+                        <div class="calendar__cell calendar__cell_number"></div>
+                        <div class="calendar__cell calendar__cell_number"></div>
+                        <div class="calendar__cell calendar__cell_number">1</div>
+                        <div class="calendar__cell calendar__cell_number">2</div>
+                        <div class="calendar__cell calendar__cell_number">3</div>
+
+                        <div class="calendar__cell calendar__cell_number">4</div>
+                        <div class="calendar__cell calendar__cell_number">5</div>
+                        <div class="calendar__cell calendar__cell_number">6</div>
+                        <div class="calendar__cell calendar__cell_number">7</div>
+                        <div class="calendar__cell calendar__cell_number">8</div>
+                        <div class="calendar__cell calendar__cell_number">9</div>
+                        <div class="calendar__cell calendar__cell_number">10</div>
+
+                        <div class="calendar__cell calendar__cell_number">11</div>
+                        <div class="calendar__cell calendar__cell_number">12</div>
+                        <div class="calendar__cell calendar__cell_number">13</div>
+                        <div class="calendar__cell calendar__cell_number">14</div>
+                        <div class="calendar__cell calendar__cell_number">15</div>
+                        <div class="calendar__cell calendar__cell_number">16</div>
+                        <div class="calendar__cell calendar__cell_number">17</div>
+
+                        <div
+                                class="calendar__cell calendar__cell_active calendar__cell_number"
+                        >
+                          18
+                        </div>
+                        <div
+                                class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                        >
+                          19
+                        </div>
+                        <div
+                                class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                        >
+                          20
+                        </div>
+                        <div
+                                class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                        >
+                          21
+                        </div>
+                        <div
+                                class="
+                calendar__cell calendar__cell_active-zone calendar__cell_number
+              "
+                        >
+                          22
+                        </div>
+                        <div
+                                class="calendar__cell calendar__cell_active calendar__cell_number"
+                        >
+                          23
+                        </div>
+                        <div class="calendar__cell calendar__cell_number">24</div>
+
+                        <div class="calendar__cell calendar__cell_number">25</div>
+                        <div class="calendar__cell calendar__cell_number">26</div>
+                        <div class="calendar__cell calendar__cell_number">27</div>
+                        <div class="calendar__cell calendar__cell_number">28</div>
+                        <div class="calendar__cell calendar__cell_number">29</div>
+                        <div class="calendar__cell calendar__cell_number">30</div>
+                        <div class="calendar__cell calendar__cell_number">31</div>
+                      </div>
+                    </div>
+                  </div>
+            </xmp>
               </div>
-              <div class="tabs__content tabs__css">
-                <xmp></xmp>
+              <div class="tabs__content tabs__css" data-id="css">
+                <xmp
+>
+                  .calendar {
+                  border: 1px solid var(--grey-3);
+                  border-radius: 8px;
+                  padding: 28px;
+                  width: 100%;
+                  }
+
+                  .calendar_w300 {
+                  width: 300px;
+                  }
+
+                  .calendar__title {
+                  text-align: center;
+                  padding-bottom: 28px;
+                  }
+
+                  .calendar__wrapper {
+                  position: relative;
+                  padding-bottom: 100%;
+                  }
+
+                  .calendar__inner {
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  display: grid;
+                  grid-template-columns: repeat(7, 1fr);
+                  text-align: center;
+                  }
+
+                  .calendar__cell {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  }
+
+                  .calendar__cell_day {
+                  color: var(--grey-6);
+                  font-size: 14px;
+                  line-height: 20px;
+                  }
+
+                  .calendar__cell_number {
+                  color: var(--grey-7);
+                  font-family: 'Source Sans Pro', sans-serif;
+                  font-size: 16px;
+                  line-height: 20px;
+                  }
+
+                  .calendar__cell_active {
+                  background-color: var(--active);
+                  color: var(--white);
+                  }
+
+                  .calendar__cell_active-zone {
+                  background-color: var(--active-secondary);
+                  }
+                </xmp
+                >
               </div>
             </div>
           </div>
@@ -100,4 +346,5 @@
       </footer>
     </div>
   </body>
+  <script src="./../components/tabs/tabs.js"></script>
 </html>

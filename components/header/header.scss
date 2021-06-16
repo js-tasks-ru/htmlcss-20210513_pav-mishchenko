@@ -1,0 +1,48 @@
+$breakpoint-tablet: 768px;
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 165px 0;
+  align-items: center;
+
+  &__menu-toggle {
+    display: none;
+  }
+
+  &__title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-basis: 100%;
+  }
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    padding: 16px;
+
+    &__menu-toggle {
+      background-image: url('../../assets/images/menu.svg');
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      display: block;
+      cursor: pointer;
+    }
+
+    &__menu-toggle_open {
+      background-image: url('../../assets/images/x.svg');
+      background-color: var(--grey-2);
+      background-position: center;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+    }
+
+    &__logo {
+      margin: auto;
+    }
+
+    &__title {
+      margin: 16px 0;
+    }
+  }
+}

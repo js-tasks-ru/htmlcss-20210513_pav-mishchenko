@@ -1,3 +1,7 @@
+.radio_no-events {
+  pointer-events: none;
+}
+
 .radio__input {
   width: 0;
   height: 0;

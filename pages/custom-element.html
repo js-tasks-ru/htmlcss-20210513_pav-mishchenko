@@ -36,6 +36,11 @@
               href="/htmlcss-20210513_pav-mishchenko/pages/custom-element.html"
               >Custom form elements</a
             >
+            <a
+                    class="menu__section-item"
+                    href="/htmlcss-20210513_pav-mishchenko/pages/buttons.html"
+            >Buttons</a
+            >
           </div>
           <div class="menu__section">
             <h4 class="menu__section-title">Containers</h4>
@@ -62,34 +67,406 @@
           </div>
         </div>
         <div class="component">
-          <div class="component__title">Component title</div>
-          <div class="component__render"></div>
+          <div class="component__title component__box">Custom form elements</div>
+          <div class="component__render component__box">
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox__input" />
+              <div class="checkbox__state">
+                <div class="checkbox__control">
+                  <img
+                          class="checkbox__icon"
+                          src="./../assets/images/sprite.svg#checkWhite"
+                  />
+                </div>
+                <div class="checkbox__title">Default</div>
+              </div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox__input" checked />
+              <div class="checkbox__state">
+                <div class="checkbox__control">
+                  <img
+                          class="checkbox__icon"
+                          src="./../assets/images/sprite.svg#checkWhite"
+                  />
+                </div>
+                <div class="checkbox__title">Checked</div>
+              </div>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" class="checkbox__input" disabled />
+              <div class="checkbox__state">
+                <div class="checkbox__control">
+                  <img
+                          class="checkbox__icon"
+                          src="./../assets/images/sprite.svg#checkWhite"
+                  />
+                </div>
+                <div class="checkbox__title">Disabled</div>
+              </div>
+            </label>
+
+            <label class="radio">
+              <input type="radio" class="radio__input" />
+              <div class="radio__state">
+                <div class="radio__control"><div class="radio__icon"></div></div>
+                <div class="radio__title">Default</div>
+              </div>
+            </label>
+            <label class="radio">
+              <input type="radio" class="radio__input" checked />
+              <div class="radio__state">
+                <div class="radio__control"><div class="radio__icon"></div></div>
+                <div class="radio__title">Selected</div>
+              </div>
+            </label>
+            <label class="radio">
+              <input type="radio" class="radio__input" disabled />
+              <div class="radio__state">
+                <div class="radio__control"><div class="radio__icon"></div></div>
+                <div class="radio__title">Disabled</div>
+              </div>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__input" />
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__icon"></div>
+                </div>
+                <div class="toggle__title toggle__title_on">On</div>
+                <div class="toggle__title toggle__title_off">Off</div>
+                <div class="toggle__title_disabled">Disbaled</div>
+              </div>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__input" checked />
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__icon"></div>
+                </div>
+                <div class="toggle__title toggle__title_on">On</div>
+                <div class="toggle__title toggle__title_off">Off</div>
+                <div class="toggle__title_disabled">Disbaled</div>
+              </div>
+            </label>
+            <label class="toggle">
+              <input type="checkbox" class="toggle__input" disabled />
+              <div class="toggle__state">
+                <div class="toggle__control">
+                  <div class="toggle__icon"></div>
+                </div>
+                <div class="toggle__title toggle__title_on">On</div>
+                <div class="toggle__title toggle__title_off">Off</div>
+                <div class="toggle__title toggle__title_disabled">Disbaled</div>
+              </div>
+            </label>
+          </div>
+
           <div class="component__code">
-            <div class="tabs">
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#html-tab"
-                checked
-              />
-              <input
-                type="radio"
-                name="tab"
-                class="tabs__input"
-                id="#css-tab"
-              />
+            <div class="component__box">
+              <div class="tabs">
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#html-tab"
+                  checked
+                  data-id="html"
+                />
+                <input
+                  type="radio"
+                  name="tab"
+                  class="tabs__input"
+                  id="#css-tab"
+                  data-id="css"
+                />
 
-              <div class="tabs__scroller component__tabs">
-                <label class="tabs__label" for="#html-tab">HTML</label>
-                <label class="tabs__label" for="#css-tab">CSS</label>
+                <div class="tabs__scroller">
+                  <label class="tabs__label" for="#html-tab">HTML</label>
+                  <label class="tabs__label" for="#css-tab">CSS</label>
+                </div>
               </div>
+            </div>
 
-              <div class="tabs__content tabs__html">
-                <xmp></xmp>
+            <div class="component__code-content">
+              <div class="tabs__content tabs__content_open" data-id="html">
+                <xmp>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox__input" />
+                    <div class="checkbox__state">
+                      <div class="checkbox__control">
+                        <img
+                                class="checkbox__icon"
+                                src="./../../assets/images/sprite.svg#checkWhite"
+                        />
+                      </div>
+                      <div class="checkbox__title">Default</div>
+                    </div>
+                  </label>
+                  <label class="radio">
+                    <input type="radio" class="radio__input" />
+                    <div class="radio__state">
+                      <div class="radio__control"><div class="radio__icon"></div></div>
+                      <div class="radio__title">Default</div>
+                    </div>
+                  </label>
+                  <label class="toggle">
+                    <input type="checkbox" class="toggle__input" />
+                    <div class="toggle__state">
+                      <div class="toggle__control">
+                        <div class="toggle__icon"></div>
+                      </div>
+                      <div class="toggle__title toggle__title_on">On</div>
+                      <div class="toggle__title toggle__title_off">Off</div>
+                      <div class="toggle__title_disabled">Disbaled</div>
+                    </div>
+                  </label>
+
+            </xmp>
               </div>
-              <div class="tabs__content tabs__css">
-                <xmp></xmp>
+              <div class="tabs__content tabs__css" data-id="css">
+                <xmp
+>
+                  .checkbox_no-events {
+                  pointer-events: none;
+                  }
+
+                  .checkbox__input {
+                  width: 0;
+                  height: 0;
+                  pointer-events: none;
+                  position: absolute;
+                  opacity: 0;
+                  outline: none;
+                  }
+
+                  .checkbox__state {
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  }
+
+                  .checkbox__title {
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: var(--grey-4);
+                  margin-left: 12px;
+                  }
+
+                  .checkbox__control {
+                  width: 28px;
+                  height: 28px;
+                  background: var(--white);
+                  border: 1px solid var(--grey-2);
+                  border-radius: 4px;
+                  position: relative;
+                  }
+
+                  .checkbox__icon {
+                  display: none;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 13px;
+                  }
+
+                  .checkbox__input:checked ~ .checkbox__state .checkbox__control {
+                  background: var(--blue-light);
+                  border-color: var(--blue-light);
+                  }
+
+                  .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
+                  display: block;
+                  }
+
+                  .checkbox__input:focus ~ .checkbox__state .checkbox__title {
+                  text-decoration: underline;
+                  }
+
+                  .checkbox__input:disabled ~ .checkbox__state {
+                  cursor: auto;
+                  pointer-events: none;
+                  }
+
+                  .checkbox__input:disabled ~ .checkbox__state .checkbox__control {
+                  background: var(--grey-2);
+                  }
+
+                  .checkbox__input:disabled ~ .checkbox__state .checkbox__title {
+                  color: var(--grey-2);
+                  }
+
+                  .radio_no-events {
+                  pointer-events: none;
+                  }
+
+                  .radio__input {
+                  width: 0;
+                  height: 0;
+                  pointer-events: none;
+                  position: absolute;
+                  opacity: 0;
+                  outline: none;
+                  }
+
+                  .radio__state {
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  }
+
+                  .radio__control {
+                  width: 28px;
+                  height: 28px;
+                  background: var(--white);
+                  border: 1px solid var(--grey-2);
+                  border-radius: 14px;
+                  position: relative;
+                  }
+
+                  .radio__title {
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: var(--grey-4);
+                  margin-left: 12px;
+                  }
+
+                  .radio__icon {
+                  display: none;
+                  width: 18px;
+                  height: 18px;
+                  background: var(--blue-light);
+                  border-radius: 14px;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  }
+
+                  .radio__input:checked ~ .radio__state .radio__control {
+                  border: 2px solid var(--blue-light);
+                  }
+
+                  .radio__input:checked ~ .radio__state .radio__icon {
+                  display: block;
+                  }
+
+                  .radio__input:focus ~ .radio__state .radio__title {
+                  text-decoration: underline;
+                  }
+
+                  .radio__input:disabled ~ .radio__state {
+                  cursor: auto;
+                  pointer-events: none;
+                  }
+
+                  .radio__input:disabled ~ .radio__state .radio__control {
+                  background: var(--grey-2);
+                  }
+
+                  .radio__input:disabled ~ .radio__state .radio__title {
+                  color: var(--grey-2);
+                  }
+
+                  .toggle__input {
+                  width: 0;
+                  height: 0;
+                  pointer-events: none;
+                  position: absolute;
+                  opacity: 0;
+                  outline: none;
+                  }
+
+                  .toggle__state {
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer;
+                  }
+
+                  .toggle__title {
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: var(--grey-4);
+                  margin-left: 12px;
+                  }
+
+                  .toggle__control {
+                  width: 52px;
+                  height: 28px;
+                  background: var(--white);
+                  border: 1px solid var(--grey-2);
+                  border-radius: 16px;
+                  position: relative;
+                  }
+
+                  .toggle__icon {
+                  width: 24px;
+                  height: 24px;
+                  background: var(--grey-2);
+                  border-radius: 16px;
+                  position: absolute;
+                  top: 50%;
+                  transform: translate(2px, -50%);
+                  }
+
+                  .toggle__input:checked ~ .toggle__state .toggle__control {
+                  background: var(--blue-light);
+                  border-color: var(--blue-light);
+                  }
+
+                  .toggle__input:checked ~ .toggle__state .toggle__icon {
+                  background: var(--white);
+                  right: 0;
+                  transform: translate(-2px, -50%);
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state {
+                  cursor: auto;
+                  pointer-events: none;
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state .toggle__control {
+                  background: var(--grey-2);
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state .toggle__title {
+                  color: var(--grey-2);
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state .toggle__icon {
+                  background: var(--grey-3);
+                  }
+
+                  /* Labels changing just for fun */
+                  .toggle__title_on,
+                  .toggle__title_disabled {
+                  display: none;
+                  }
+
+                  .toggle__input:checked ~ .toggle__state .toggle__title_on {
+                  display: block;
+                  }
+
+                  .toggle__input:checked ~ .toggle__state .toggle__title_off,
+                  .toggle__input:checked ~ .toggle__state .toggle__title_disabled {
+                  display: none;
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state .toggle__title_disabled {
+                  display: block;
+                  }
+
+                  .toggle__input:disabled ~ .toggle__state .toggle__title_off,
+                  .toggle__input:disabled ~ .toggle__state .toggle__title_on {
+                  display: none;
+                  }
+
+                </xmp
+                >
               </div>
             </div>
           </div>
@@ -100,4 +477,5 @@
       </footer>
     </div>
   </body>
+  <script src="./../components/tabs/tabs.js"></script>
 </html>

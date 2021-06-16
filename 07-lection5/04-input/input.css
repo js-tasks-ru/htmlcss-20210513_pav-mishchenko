@@ -14,7 +14,7 @@
 .input__label {
   text-transform: uppercase;
   margin-bottom: 5px;
-  color: var(--grey-3);
+  color: var(--text-secondary);
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
@@ -26,7 +26,7 @@
   border-radius: 8px;
   height: 56px;
   padding: 17px 40px 17px 24px;
-  color: var(--grey-4);
+  color: var(--input-text-color);
   font-weight: normal;
   font-size: 20px;
   line-height: 26px;

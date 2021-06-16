@@ -11,14 +11,14 @@
 }
 
 .accordion__details {
-  color: var(--grey-4);
+  color: var(--input-text-color);
   padding: 24px 32px;
   position: relative;
 }
 
 .accordion__summary {
   outline: none;
-  color: var(--black);
+  color: var(--font-color);
   list-style-type: none;
   cursor: pointer;
 }

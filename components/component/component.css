@@ -9,7 +9,7 @@
   font-weight: normal;
   font-size: 28px;
   line-height: 38px;
-  color: var(--grey-4);
+  color: var(--input-text-color);
   padding: 32px 48px;
 }
 

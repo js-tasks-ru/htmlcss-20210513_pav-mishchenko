@@ -42,7 +42,7 @@
   --dark-bg: var(--black);
   --card-bg: var(--white);
   --font-color: var(--text-primary);
-  --input-text-color: var(--grey-4);
+  --input-text-color: var(--input-text-color);
 }
 
 html[data-theme-dark=''] {

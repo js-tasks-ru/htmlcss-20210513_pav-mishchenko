@@ -7,7 +7,6 @@
 @import 'variables.css';
 @import 'fonts.css';
 @import 'grid.css';
-@import 'global.css';
 
 /* pages */
 @import '../../components/page-template/page-template.css';

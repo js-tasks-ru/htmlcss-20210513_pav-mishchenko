@@ -46,7 +46,7 @@
   }
 
   .menu__section-title {
-    color: var(--grey-3);
+    color: var(--text-secondary);
   }
 
   .menu__section-item {

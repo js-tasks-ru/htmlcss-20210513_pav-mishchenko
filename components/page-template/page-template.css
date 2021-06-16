@@ -21,7 +21,7 @@
 .page-template__footer {
   padding: 56px 0;
   text-align: center;
-  color: var(--grey-3);
+  color: var(--text-secondary);
 }
 
 @media screen and (max-width: 768px) {

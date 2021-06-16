@@ -38,17 +38,20 @@
   position: absolute;
   top: 50%;
   transform: translate(2px, -50%);
+  transition: all 0.5s ease;
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control {
   background: var(--blue-light);
   border-color: var(--blue-light);
+  transition: all 0.5s ease;
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__icon {
   background: var(--white);
   right: 0;
   transform: translate(-2px, -50%);
+  transition: all 0.5s ease;
 }
 
 .toggle__input:disabled ~ .toggle__state {
